@@ -1,0 +1,16 @@
+{
+    "name": "PHP Codespace",
+    "image": "mcr.microsoft.com/devcontainers/php:latest", 
+    // or use a custom Dockerfile if you need extra PHP extensions
+    "forwardPorts": [8000], // the port you'll run the PHP server on
+    "postCreateCommand": "composer install", // if you have a composer.json
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "bmewburn.vscode-intelephense-client", // for PHP IntelliSense
+          "felixfbecker.php-debug"              // PHP debugger (optional)
+        ]
+      }
+    }
+  }
+  
